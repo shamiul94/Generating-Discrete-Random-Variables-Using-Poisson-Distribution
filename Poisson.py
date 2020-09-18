@@ -32,6 +32,10 @@ def getExperimentalValues(cdfs):
         value = random()
 
         discreteVal = 0
+
+        # Finding the smallest number which is larger than 'value'. It is actually upper bound.
+        # It can be solved using both Bruteforce and Binary Search. I used the latter. 
+        
         lo = 0
         hi = len(cdfs)-1
         while lo <= hi:
