@@ -55,16 +55,20 @@ def getExperimentalValues(cdfs):
 
     for val in discreteValues:
         freqencies[val] = freqencies[val] + 1
+    
+    for i in range(len(freqencies)):
+        freqencies[i] = freqencies[i] / 1000
+
+    noncumulative = [i for i in freqencies]
+    
 
     for i in range(1, len(freqencies)):
         freqencies[i] = freqencies[i] + freqencies[i-1]
 
-    for i in range(len(freqencies)):
-        freqencies[i] = freqencies[i] / 1000
-
     # print(freqencies)
+    # print(noncumulative)
 
-    return discreteValues, freqencies
+    return discreteValues, freqencies, noncumulative
 
 
 def getPx(x, Lambda):
@@ -91,8 +95,9 @@ def main():
     ######## Experimental values #########
     # print(cdfs)
 
-    discreteValues, cummulative_freq = getExperimentalValues(cdfs)
+    discreteValues, cummulative_freq, noncumulative_freq = getExperimentalValues(cdfs)
     plt.plot(x, cummulative_freq, label="x vs cummulative frequencies")
+    plt.plot(x, noncumulative_freq, label="x vs non-cummulative frequencies")
 
     ############# Plot them ###############
     plt.xlabel('x - axis')
