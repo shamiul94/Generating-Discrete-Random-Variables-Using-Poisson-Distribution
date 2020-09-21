@@ -6,6 +6,7 @@ from random import seed
 from random import random
 from random import uniform
 
+# This function is to plot a single curve
 
 def plotSingleGraph(x, y):
     plt.plot(x, y)
@@ -14,6 +15,7 @@ def plotSingleGraph(x, y):
     plt.title('Poisson Distribution')
     plt.show()
 
+# This function calculates the CDF or F(x) of the Poisson Distribution
 
 def getCDF(x, Lambda):
     if x < 0:
@@ -21,7 +23,16 @@ def getCDF(x, Lambda):
     else:
         return math.exp(-1.0 * Lambda) * sum([(pow(Lambda, i) / math.factorial(i)) for i in range(math.floor(x+1))])
 
+# This function calculates the PDF or p(x) of the Poisson Distribution
 
+def getPx(x, Lambda):
+    if x < 0:
+        return 0
+    else:
+        return math.exp(-1.0 * Lambda) * math.pow(Lambda, x) / math.factorial(x)
+
+
+# This function calculates the Frequencies and Cummulative Frequencies of random numbers between 0 and 1.
 def getExperimentalValues(cdfs):
     discreteValues = []
 
@@ -47,36 +58,25 @@ def getExperimentalValues(cdfs):
                 hi = mid-1
                 discreteVal = mid
 
-        # print('[', discreteVal, ']', cdfs[discreteVal], '\n')
         discreteValues.append(discreteVal)
-    # print(discreteValues)
 
     freqencies = [0 for i in range(21)]
 
     for val in discreteValues:
         freqencies[val] = freqencies[val] + 1
-    
+
     for i in range(len(freqencies)):
         freqencies[i] = freqencies[i] / 1000
 
     noncumulative = [i for i in freqencies]
-    
 
     for i in range(1, len(freqencies)):
         freqencies[i] = freqencies[i] + freqencies[i-1]
 
-    # print(freqencies)
-    # print(noncumulative)
-
     return discreteValues, freqencies, noncumulative
 
 
-def getPx(x, Lambda):
-    if x < 0:
-        return 0
-    else:
-        return math.exp(-1.0 * Lambda) * math.pow(Lambda, x) / math.factorial(x)
-
+# In this function I calculated p(x), F(x), frequencies/N, cumulative frequencies/N and plot them.
 
 def main():
     ####### Theoratical values #######
@@ -95,7 +95,8 @@ def main():
     ######## Experimental values #########
     # print(cdfs)
 
-    discreteValues, cummulative_freq, noncumulative_freq = getExperimentalValues(cdfs)
+    discreteValues, cummulative_freq, noncumulative_freq = getExperimentalValues(
+        cdfs)
     plt.plot(x, cummulative_freq, label="x vs cummulative frequencies")
     plt.plot(x, noncumulative_freq, label="x vs non-cummulative frequencies")
 
