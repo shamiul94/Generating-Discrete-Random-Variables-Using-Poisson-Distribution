@@ -10,6 +10,10 @@
 
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{float}
+% \usepackage[demo]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 %New colors defined below
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -54,7 +58,7 @@
 
 
 \begin{document}
-\title{Generating Discrete Random Numbers Using Poisson Distribution}
+\title{Generating N Random Variables Using Poisson Distribution}
 \author{Shamiul Hasan\\1505038}
 \date{\today}
 \maketitle
@@ -89,99 +93,168 @@ A discrete random variable $X$ is said to have a Poisson distribution with param
 \clearpage
 
 \section{Code}
-Below is the Python code to simulate this problem. 
-\lstinputlisting[language=Python, 
-caption=Python Code
+Below is the Python code to simulate this problem.
+\lstinputlisting[language=Python,
+	caption=Python Code
 ]{../Poisson.py}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=.8\textwidth]{pendulum.jpg}
-	\caption{Pendulum that starts at rest in an accelerating frame. If the acceleration is not constant then the apparent vertical, and thus $\phi_0$ will change with time}
-\end{figure}
+
+\clearpage
+
+% \begin{figure}[!h]
+% 	\centering
+% 	\includegraphics[width=.8\textwidth]{pendulum.jpg}
+% 	\caption{Pendulum that starts at rest in an accelerating frame. If the acceleration is not constant then the apparent vertical, and thus $\phi_0$ will change with time}
+% \end{figure}
 
 \section{Results}
 
+\subsection{Table}
+Here are the results I got from theoretical and experimental calculations.
+\begin{center}
 
-Give a schematic of the experimental setup(s) used in the experiment (see
-figure~\ref{fig:samplesetup}). Give the description of  abbreviations
-either in the figure caption or in the text. Write a description of what is
-going on.
-
-
-and eventually arrived to the
-balanced photodiode as seen in the figure~\ref{fig:samplesetup}.
-
-
-\section{Results}
-
-In this section you will need to show your experimental results. Use tables and
-graphs when it is possible. Table~\ref{tbl:bins} is an example.
-
-\begin{table}[ht]
-	\begin{center}
-		\caption{Every table needs a caption.}
-		\label{tbl:bins} % spaces are big no-no withing labels
-		\begin{tabular}{|cc|}
+	\begin{table}[H]
+		\begin{tabular}{ | c | c | c | c | c | }
 			\hline
-			\multicolumn{1}{|c}{$x$ (m)} & \multicolumn{1}{c|}{$V$ (V)} \\
+			x  & p(x)                   & Frequency/N & F(x)                & Cumulative Frequency/N \\
+			\hline\hline
 			\hline
-			0.0044151                    & 0.0030871                    \\
-			0.0021633                    & 0.0021343                    \\
-			0.0003600                    & 0.0018642                    \\
-			0.0023831                    & 0.0013287                    \\
+			0  & 0.36787944117144233    & 0.344       & 0.36787944117144233 & 0.344                  \\
+			\hline
+
+			1  & 0.36787944117144233    & 0.37        & 0.7357588823428847  & 0.714                  \\
+			\hline
+
+			2  & 0.18393972058572117    & 0.207       & 0.9196986029286058  & 0.9209999999999999     \\
+			\hline
+
+			3  & 0.06131324019524039    & 0.057       & 0.9810118431238462  & 0.978                  \\
+			\hline
+
+			4  & 0.015328310048810098   & 0.02        & 0.9963401531726562  & 0.998                  \\
+			\hline
+
+			5  & 0.0030656620097620196  & 0.002       & 0.9994058151824182  & 1.0                    \\
+			\hline
+
+			6  & 0.0005109436682936699  & 0.0         & 0.999916758850712   & 1.0                    \\
+			\hline
+
+			7  & 7.299195261338141e-05  & 0.0         & 0.9999897508033254  & 1.0                    \\
+			\hline
+
+			8  & 9.123994076672677e-06  & 0.0         & 0.9999988747974021  & 1.0                    \\
+			\hline
+
+			9  & 1.0137771196302974e-06 & 0.0         & 0.9999998885745217  & 1.0                    \\
+			\hline
+
+			10 & 1.0137771196302975e-07 & 0.0         & 0.9999999899522337  & 1.0                    \\
+			\hline
+
+			11 & 9.216155633002704e-09  & 0.0         & 0.9999999991683893  & 1.0                    \\
+			\hline
+
+			12 & 7.68012969416892e-10   & 0.0         & 0.9999999999364023  & 1.0                    \\
+			\hline
+
+			13 & 5.907792072437631e-11  & 0.0         & 0.9999999999954803  & 1.0                    \\
+			\hline
+
+			14 & 4.2198514803125934e-12 & 0.0         & 0.9999999999997002  & 1.0                    \\
+			\hline
+
+			15 & 2.8132343202083955e-13 & 0.0         & 0.9999999999999816  & 1.0                    \\
+			\hline
+
+			16 & 1.7582714501302472e-14 & 0.0         & 0.9999999999999991  & 1.0                    \\
+			\hline
+
+			17 & 1.0342773236060278e-15 & 0.0         & 1.0000000000000002  & 1.0                    \\
+			\hline
+
+			18 & 5.745985131144599e-17  & 0.0         & 1.0000000000000002  & 1.0                    \\
+			\hline
+
+			19 & 3.0242027006024205e-18 & 0.0         & 1.0000000000000002  & 1.0                    \\
+			\hline
+
+			20 & 1.5121013503012103e-19 & 0.0         & 1.0000000000000002  & 1.0                    \\
 			\hline
 		\end{tabular}
-	\end{center}
-\end{table}
+		\caption{\label{tab:data-table}Theoretical and Experimental Values Generated by Python Code}
+	\end{table}
+\end{center}
 
-Analysis of equation~\ref{eq:equation1} shows ...
 
-\blindtext
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[width=.7\textwidth]{tanh_vs_const_1.png}
+% 	\caption{Hyperbolic tangent acceleration vs immediate constant acceleration. The slow approach to the same asymptotic value of 2 meters per second per second induces a lag in the oscillation and also diminishes the amplitude of oscillation.}
+% \end{figure}
 
-\begin{figure}
+Table \ref{tab:data-table} shows us that $p(x)$ and $Frequency/N$ values are apporximately similar. Same goes for $F(x)$ and $Cumulative Frequency/ N$. This is our expected result.
+
+\subsection{Graphs}
+
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=.7\textwidth]{tanh_vs_const_1.png}
-	\caption{Hyperbolic tangent acceleration vs immediate constant acceleration. The slow approach to the same asymptotic value of 2 meters per second per second induces a lag in the oscillation and also diminishes the amplitude of oscillation.}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.35]{Figures/pdf.png}
+		\caption{p(x) vs x}
+		\label{fig:px}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.35]{Figures/noncumfreq.png}
+		\caption{Frequency/N vs x}
+		\label{fig:freq}
+	\end{subfigure}
+	\caption{PDF and Frequency Side by Side}
+	\label{fig:test}
 \end{figure}
 
-For example, it is easy to conclude that the
-experiment and theory match each other rather well if you look at
-Fig.~\ref{fig:samplesetup} and Fig.~\ref{fig:exp_plots}.
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.35]{Figures/cdf.png}
+		\caption{F(x) vs x}
+		\label{fig:fx}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.35]{Figures/cumfreq.png}
+		\caption{Cumulative Frequency/N vs x}
+		\label{fig:cumfreq}
+	\end{subfigure}
+	\caption{CDF and Cumulative Frequency Side by Side}
+	\label{fig:test}
+\end{figure}
 
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.56]{Figures/pdf_noncum.png}
+		\caption{Overlap of PDF and Frequency/N}
+		\label{fig:fx}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[scale=0.56]{Figures/cdf_cumfreq.png}
+		\caption{Overlap of CDF and Cumulative Frequency}
+		\label{fig:cumfreq}
+	\end{subfigure}
+	\caption{Similarities between graphs}
+	\label{fig:overlap}
+\end{figure}
+
+\subsection{Observation}
+From Graph \ref{fig:overlap} we can see that PDF almost overlaps with Frequency/N and CDF overlaps with Cumulative Frequency. That means, our experimental values are relevant with our theoretical values. 
 
 \section{Conclusions}
-Here you briefly summarize your findings. Did you learn any new physics? Was everything as expected?
-
-\blindtext
-
-\section{Future Work}
-Since you had limited time to work on this project, what questions are left outstanding? What would be your next steps?
-
-\blindtext
-
-%++++++++++++++++++++++++++++++++++++++++
-% References section will be created automatically 
-% with inclusion of "thebibliography" environment
-% as it shown below. See text starting with line
-% \begin{thebibliography}{99}
-% Note: with this approach it is YOUR responsibility to put them in order
-% of appearance.
-
-\begin{thebibliography}{99}
-
-	\bibitem{melissinos}
-	A.~C. Melissinos and J. Napolitano, \textit{Experiments in Modern Physics},
-	(Academic Press, New York, 2003).
-
-	\bibitem{Cyr}
-	N.\ Cyr, M.\ T$\hat{e}$tu, and M.\ Breton,
-	% "All-optical microwave frequency standard: a proposal,"
-	IEEE Trans.\ Instrum.\ Meas.\ \textbf{42}, 640 (1993).
-
-	\bibitem{Wiki} \emph{Expected value},  available at
-	\texttt{http://en.wikipedia.org/wiki/Expected\_value}.
-
-\end{thebibliography}
-
+Graph \ref{fig:overlap} actually shows us that our experimental and theoretical results are compatible to each other. So, we can generate N random variables using Poisson distribution. 
 
 \end{document}

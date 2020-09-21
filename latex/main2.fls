@@ -107,6 +107,14 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
@@ -163,14 +171,26 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/../Poisson.py
 INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/../Poisson.py
-INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/pendulum.jpg
-INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/pendulum.jpg
-INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/pendulum.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/tanh_vs_const_1.png
-INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/tanh_vs_const_1.png
-INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/tanh_vs_const_1.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/pdf.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/pdf.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/pdf.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/noncumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/noncumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/noncumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cdf.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cdf.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cdf.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/pdf_noncum.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/pdf_noncum.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/pdf_noncum.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cdf_cumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cdf_cumfreq.png
+INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/Figures/cdf_cumfreq.png
 INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.aux
 INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.out
 INPUT /home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.out
@@ -179,6 +199,7 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
@@ -186,6 +207,4 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb

@@ -102,12 +102,29 @@ def main():
         cdfs)
     plt.plot(x, cummulative_freq, label="x vs cummulative frequencies")
     plt.plot(x, noncumulative_freq, label="x vs non-cummulative frequencies")
+
+    for i in range(21):
+        print(x[i], '&', Px[i], '&', noncumulative_freq[i], '&', cdfs[i],
+              '&', cummulative_freq[i], '\\\\', '\n', '\\hline' '\n')
+
     ############# Plot them ###############
     plt.xlabel('x - axis')
     plt.ylabel('y - axis')
     plt.title('Poisson')
     plt.legend()
     plt.show()
+
+    ############
+    fig, ax = plt.subplots(figsize=(10,10), dpi= 80)
+    ax.vlines(x=x, ymin=0, ymax=cummulative_freq, color='firebrick', alpha=1, linewidth=2)
+    ax.scatter(x=x, y=cummulative_freq, s=75, color='firebrick', alpha=1)
+
+    plt.xlabel('X')
+    plt.ylabel('Cumulative Frequency/N')
+    plt.title('Poisson Distribution Cumulative Frequency')
+    plt.legend()
+    plt.show()
+    return
 
 
 if __name__ == '__main__':
