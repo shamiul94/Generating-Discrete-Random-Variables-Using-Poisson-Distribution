@@ -1,9 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1600685109 "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.tex" "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.pdf" "main2" 1600685110
+["pdflatex"] 1600685719 "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.tex" "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.pdf" "main2" 1600685720
   "../Poisson.py" 1600684382 2947 d3096575d20b94f0cb83f3e59f688e39 ""
   "/etc/texmf/web2c/texmf.cnf" 1595448935 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.aux" 1600685110 3748 0b909e86b9dd7d963e59f18d28011904 ""
-  "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.tex" 1600685110 8840 4155f461ee0dd6c52f3a44bf43c3babc ""
+  "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.aux" 1600685720 3758 a67c81311f8ecfd052b6341d5295f192 ""
+  "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.tex" 1600685720 8887 3e63c85dae99cb1e99117202ae0ceac3 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -110,13 +110,13 @@
   "Figures/noncumfreq.png" 1600683117 20409 2ddb7ba93c5bd75d0436bac2ae645d4e ""
   "Figures/pdf.png" 1600682824 15602 9481e228cbc08f9a7c24f9e96c56ec88 ""
   "Figures/pdf_noncum.png" 1600684352 26718 34211194a23498543c3bb075693b7463 ""
-  "main2.aux" 1600685110 3748 0b909e86b9dd7d963e59f18d28011904 "pdflatex"
-  "main2.out" 1600685110 396 7123b3bd25337922cb53f1d229243b51 "pdflatex"
-  "main2.tex" 1600685110 8840 4155f461ee0dd6c52f3a44bf43c3babc ""
+  "main2.aux" 1600685720 3758 a67c81311f8ecfd052b6341d5295f192 "pdflatex"
+  "main2.out" 1600685720 406 d7fbda0044dccba6a7880e75640530a6 "pdflatex"
+  "main2.tex" 1600685720 8887 3e63c85dae99cb1e99117202ae0ceac3 ""
   (generated)
   "main2.log"
+  "main2.out"
   "main2.pdf"
   "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.pdf"
-  "main2.aux"
   "/home/heisenberg/Study/4-2/Simulation Lab/Generating-Discrete-Random-Variables-Using-Poisson-Distribution/latex/main2.log"
-  "main2.out"
+  "main2.aux"
